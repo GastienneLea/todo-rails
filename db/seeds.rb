@@ -1,3 +1,3 @@
 require 'faker'
 
-FactoryBot.create_list(:user, 100)
+FactoryBot.create_list(:user, 40)
