@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::API
-    include Graphiti::Responders
+    include Graphiti::Rails::Responders
 end
