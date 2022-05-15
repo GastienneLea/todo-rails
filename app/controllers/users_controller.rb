@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user, except: :create
+
   def index
     users = UserResource.all(params)
     respond_with(users)
