@@ -35,10 +35,11 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include GraphitiSpecHelpers::RSpec
   config.include GraphitiSpecHelpers::Sugar
+  config.include Graphiti::Rails::TestHelpers
 
   # Raise errors during tests by default
   config.before :each do
-    GraphitiErrors.disable!
+    handle_request_exceptions(false)
   end
 
   # Clean DB between test runs
@@ -88,3 +89,5 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+GraphitiSpecHelpers::RSpec.schema!
