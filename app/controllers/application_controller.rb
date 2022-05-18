@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::API
     include Graphiti::Rails::Responders
+    
+    attr_accessor :current_user
 
     def authenticate_user
         header = request.headers['Authorization']
