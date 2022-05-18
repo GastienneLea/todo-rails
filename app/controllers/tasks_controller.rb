@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  before_action :authenticate_user, except: :create
+
   def index
     tasks = TaskResource.all(params)
     respond_with(tasks)

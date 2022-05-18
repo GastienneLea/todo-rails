@@ -8,4 +8,8 @@ class ApplicationResource < Graphiti::Resource
     paginate do |scope, current_page, per_page|
         scope.page(current_page).per(per_page)
     end
+
+    def current_user
+        context.current_user
+    end
 end

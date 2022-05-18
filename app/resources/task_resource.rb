@@ -7,4 +7,8 @@ class TaskResource < ApplicationResource
   belongs_to :user
 
   filter :user_id, :integer
+
+  def base_scope
+    Task.where(user_id: current_user)
+  end
 end
