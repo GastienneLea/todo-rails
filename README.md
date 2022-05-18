@@ -1,16 +1,16 @@
 ## Fonctionnalités:
-  . CRUD task todo
-  . Model spraypaint User et Task
+  * CRUD task todo
+  * Model spraypaint User et Task
 ## Points positifs:
   . Création des endpoints CRUD rapide et simple d'utilisation (pour les fonctionnalité basiques)
 
 ## Points negatifs:
-  . Popularité de la technologie et la communité
-  . Certains documentation ne sont pas présentes
-  . Difficile de trouver la solution s'il y a un bug
+  * Popularité de la technologie et la communité
+  * Certains documentation ne sont pas présentes
+  * Difficile de trouver la solution s'il y a un bug
 
 ## Difficulté:
-  . Pas difficile
+  * Pas difficile
 
 # README
 
